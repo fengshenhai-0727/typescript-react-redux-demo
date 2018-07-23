@@ -1,9 +1,22 @@
 {
   "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "linterOptions": {
-    "exclude": [
-      "config/**/*.js",
-      "node_modules/**/*.ts"
+    "exclude": ["config/**/*.js", "node_modules/**/*.ts"]
+  },
+  "rules": {
+    "quotemark": [true, "single", "jsx-double"],
+    "interface-over-type-literal": false,
+    "object-literal-sort-keys": false,
+    "interface-name": [true, "never-prefix"],
+    "no-console": [
+      false,
+      "log",
+      "error",
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
     ]
   }
 }
